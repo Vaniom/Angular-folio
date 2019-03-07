@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,8 +9,11 @@ import { Component } from '@angular/core';
 
 export class HomeComponent {
 
-  something: any;
+  constructor(private router: Router) {
 
-  constructor() {
-   }
+  }
+
+  onGoToContact() {
+    this.router.navigate(['/contact']);
+  }
 }

@@ -1,36 +1,4 @@
-.section-black {
-    background-color: #343434;
-    color: rgba(255 ,255 ,255 ,0.7);
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-.section-white {
-    background-color: #fff;
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-.section-grey {
-    background-color: #E9ECEF;
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    padding-top: 70px;
-    padding-bottom: 70px;
 
-}
-.section-black h1 {
-    text-align: left;
-    margin-bottom: 70px;
-}
-.section-white h2 {
-    text-align: left;
-    margin-bottom: 70px;
-}
 .type-writer {
     overflow: auto;
 }
