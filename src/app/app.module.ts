@@ -38,7 +38,7 @@ const appRoutes: Routes = [
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot(appRoutes),
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
