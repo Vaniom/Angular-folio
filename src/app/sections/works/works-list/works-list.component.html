@@ -1,3 +1,14 @@
-<p>
-  works-list works!
-</p>
+<div class="section-white">
+  <div class="container">
+      <app-works-single *ngFor="let work of works, let i = index"
+                        [workTitle]="work.title"
+                        [workDescription]="work.description"
+                        [workPhoto]="work.photo"
+                        [workUrl]="work.projectUrl"
+                        [workTasks]="work.tasks"
+                        [workGallery]="work.gallery"
+                        [workGithub]="work.github"
+                        [workEval]="work.eval"
+                        [workIndex]="i"></app-works-single>
+  </div>
+</div>
