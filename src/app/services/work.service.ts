@@ -1,12 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Injectable } from '@angular/core';
 
-@Component({
-  selector: 'app-works-list',
-  templateUrl: './works-list.component.html',
-  styleUrls: ['./works-list.component.css'],
+@Injectable({
+  providedIn: 'root'
 })
-export class WorksListComponent implements OnInit {
+export class WorkService {
 
   works = [
     {title: 'Projet d\'étude: Chalets & Caviar',
@@ -34,7 +31,9 @@ export class WorksListComponent implements OnInit {
     description: 'A partir de quelques contraintes, produire un jeu en javascript et jQuery jouable à deux joueurs en local (sur la même machine). Le code produit devait-être orienté objet. Liberté sur les fonctionnalités et l\'interface graphique.',
     tasks: 'Production de code JS et jQuery en orienté objet, réalisation de l\'interface qraphique',
     photo: '../../../assets/W6/w6-1.png',
-    gallery: true,
+    // tslint:disable-next-line:max-line-length
+    gallery: ['../../../assets/W6/gallery/P6-1.png', '../../../assets/W6/gallery/P6-2.png', '../../../assets/W6/gallery/P6-3.png', '../../../assets/W6/gallery/P6-4.png'],
+    galleryCaption: ['index 0', 'index 1', 'index 2', 'index 3'],
     github: 'https://github.com/Vaniom/P6-Jeu-de-plateau-JS',
     // tslint:disable-next-line:max-line-length
     eval: 'Tous les critères de validation ont été respectés. Très bonne présentation et bonne surprise sur le fait que les déplacements se fassent via le clavier',
@@ -65,11 +64,6 @@ export class WorksListComponent implements OnInit {
     },
   ];
 
-  constructor(private router: Router) {
-  }
 
-  ngOnInit() {
-    window.scrollTo(0, 0);
-  }
-
+  constructor() { }
 }

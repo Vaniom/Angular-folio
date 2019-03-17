@@ -1,0 +1,11 @@
+.img-item {
+    border: 3px solid #343434;
+    border-radius: 10px;
+}
+
+.github-icon {
+    color: black;
+}
+.github-icon:hover {
+    color: #343434;
+}

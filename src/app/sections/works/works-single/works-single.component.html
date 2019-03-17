@@ -12,9 +12,9 @@
         </div>
         <p class="card-text text-justify">{{ workIndex }}/ {{ workDescription }}</p>
         <p class="card-text text-justify"><strong>Tâches: </strong>{{ workTasks }}</p>
-        <button type="button" class="btn btn-primary" *ngIf="workGallery">Voir la galerie</button>
+        <button type="button" class="btn btn-primary" *ngIf="workGallery" (click)="onViewDetails( [workIndex])">Voir la galerie</button>
         <a href="{{ workUrl }}" class="btn btn-primary" target="blank" style="float:right;margin-bottom:20px;" *ngIf="workUrl">Visiter</a>
-      </div>
+      </div> 
     </div>
   </div>
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-works-single',
@@ -16,10 +17,16 @@ export class WorksSingleComponent implements OnInit {
   @Input() workGallery: boolean;
   @Input() workGithub: string;
   @Input() workEval: string;
+  @Input() works: any[];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+    window.scrollTo(0, 0);
+  }
+
+  onViewDetails(id) {
+    this.router.navigate(['/works', 'details', {index: id}]);
   }
 
 }
