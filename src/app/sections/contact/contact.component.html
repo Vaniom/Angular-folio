@@ -3,7 +3,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-              <iframe class="map" height="400" width="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=3.11693474650383%2C45.70122474608733%2C3.3737401664257054%2C45.8929559462513&amp;layer=mapnik&amp;marker=45.7971728091502%2C3.2453374564647675" style="border: 1px solid black"></iframe><br/>
+              <iframe class="map img-fluid" height="400" width="400" frameborder="0" scrolling="no" marginheight="1" marginwidth="1" src="https://www.openstreetmap.org/export/embed.html?bbox=3.11693474650383%2C45.70122474608733%2C3.3737401664257054%2C45.8929559462513&amp;layer=mapnik&amp;marker=45.7971728091502%2C3.2453374564647675" style="border: 1px solid black"></iframe><br/>
         </div>
         <div class="col-md-6">
           <h2>Localisation:</h2>
@@ -13,24 +13,25 @@
                 <h2>Sur les réseaux:</h2>
                 <div style="flex: auto;margin-bottom:70px;">
                   <a href="https://twitter.com/florentpia" target="blank">
-                    <i class="contact-reso fab fa-twitter-square"></i>
+                    <i class="contact-reso fab fa-twitter-square faa-vertical animated"></i>
                   </a>
                   <a href="https://www.linkedin.com/in/florent-pianet/" target="blank">
-                    <i class="contact-reso fab fa-linkedin"></i>
+                    <i class="contact-reso fab fa-linkedin faa-wrench animated"></i>
                   </a>
-                  <a href="https://github.com/Vaniom">
-                    <i class="contact-reso fab fa-github-square" target="blank"></i>
+                  <a href="https://github.com/Vaniom" target="blank">
+                    <i class="contact-reso fab fa-github-square faa-tada animated"></i>
                   </a>
                 </div>
               </div>
               <div class="col-md-4">
                 <h2>Par mail:</h2>
-                <a href="mailto:hello@florentpia.net">
-                  <i class="contact-reso fas fa-envelope"></i>
-                </a>
+                <div id="insertMail">
+                  <i class="contact-reso fas fa-envelope faa-horizontal animated" (click)="onClick()"></i>
+                </div>
+                
               </div>
             </div>
-            <h2>Télécharger mon CV : <a href="../../../assets/cv_florentpianet.pdf" download><i class="far fa-file-alt" style="font-size: 1.5em;color:#4C4C4C"></i></a></h2>
+            <h2>Télécharger mon CV : <a href="../../../assets/cv_florentpianet.pdf" download><i class="fas fa-file-download faa-pulse animated-hover" style="font-size: 1.8em;color:#4C4C4C"></i></a></h2>
         </div>
       </div>
     </div>      

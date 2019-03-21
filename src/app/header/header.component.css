@@ -1,5 +1,12 @@
 #brand:hover {
     cursor: pointer;
+    color: #306AD9;
+}
+
+#brand {
+    color: #306AD9;
+    font-family: "Fredoka One", cursive;
+    font-size: 1.5em;
 }
 /*
 .navbar-trans {

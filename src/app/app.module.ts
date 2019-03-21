@@ -12,6 +12,7 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { WorksViewdetailsComponent } from './sections/works/works-viewdetails/works-viewdetails.component';
+import { ParticlesModule } from 'angular-particle';
 
 const appRoutes: Routes = [
   { path : 'home', component: HomeComponent},
@@ -40,6 +41,7 @@ const appRoutes: Routes = [
     ReactiveFormsModule,
     RouterModule.forRoot(appRoutes),
     NgbModule.forRoot(),
+    ParticlesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

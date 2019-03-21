@@ -1,9 +1,18 @@
 .map {
     border: 5px solid black;
     box-shadow: 5px 5px 5px #343434;
+    height: 400px !important;
+    margin-bottom: 35px;
 }
 .contact-reso {
     font-size: 4em;
     margin-right: 20px;
     color: #4C4C4C;
+}
+
+#insertMail :hover{
+    cursor: pointer;
+}
+#insertMail {
+    margin-bottom: 50px;
 }
