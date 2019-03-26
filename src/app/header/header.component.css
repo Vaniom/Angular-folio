@@ -8,6 +8,18 @@
     font-family: "Fredoka One", cursive;
     font-size: 1.5em;
 }
+
+.language {
+    color: #808080;
+    font-size: 1.2rem;
+}
+.language-container :first-child {
+    margin-right: 20px;
+}
+a.language {
+    text-decoration: none;
+    color: #808080;
+}
 /*
 .navbar-trans {
     background: transparent !important;

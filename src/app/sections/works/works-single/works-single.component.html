@@ -12,8 +12,8 @@
         </div>
         <p class="card-text text-justify">{{ workDescription }}</p>
         <p class="card-text text-justify"><i class="fas fa-thumbtack" style="font-size:1.2em; margin-right:5px;"></i>{{ workTasks }}</p>
-        <button type="button" class="btn btn-primary" *ngIf="workGallery" (click)="onViewDetails( [workIndex])">Voir la galerie</button>
-        <a href="{{ workUrl }}" class="btn btn-primary" target="blank" style="float:right;margin-bottom:20px;" *ngIf="workUrl">Visiter</a>
+        <button type="button" i18n="@@workSingle_galerie_btn" class="btn btn-primary" *ngIf="workGallery" (click)="onViewDetails( [workIndex])">Voir la galerie</button>
+        <a href="{{ workUrl }}" i18n="@@workSingle_visiter" class="btn btn-primary" target="blank" style="float:right;margin-bottom:20px;" *ngIf="workUrl">Visiter</a>
       </div> 
     </div>
   </div>

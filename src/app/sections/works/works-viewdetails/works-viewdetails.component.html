@@ -7,7 +7,7 @@
     <p class="text-justify">
         <i class="fas fa-thumbtack" style="font-size:1.2em; margin-right:5px;"></i> {{ work.tasks }}
     </p>
-    <p *ngIf="work.github"> <a href="{{ work.github }}" class="github-icon" style="font-size:2em;margin-top:-2%;margin-right:10px;" target="blank" ><i class="fab fa-github-square"></i></a>Voir le code sur gitHub.</p>
+    <p *ngIf="work.github" i18n="@@workViewDetails_github_icon"> <a href="{{ work.github }}" class="github-icon" style="font-size:2em;margin-top:-2%;margin-right:10px;" target="blank" ><i class="fab fa-github-square"></i></a>Voir le code sur gitHub.</p>
     <div class="gallery">
       <div class="gallery-item" 
           *ngFor="let photo of work.gallery, let i = index">
@@ -23,6 +23,6 @@
           
       </div>
     </div>
-    <button type="button" class="btn btn-dark" style="margin-top:50px;" (click)="onBack()">Retour à  la liste</button>
+    <button type="button" i18n="@@workviewDetails_back_btn" class="btn btn-dark" style="margin-top:50px;" (click)="onBack()">Retour à  la liste</button>
   </div>
 </div>

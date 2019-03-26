@@ -8,7 +8,7 @@
     <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="myNavbarNav">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" routerLink="works/works-list">Réalisations</a>
+        <a i18n="@@header_realisations" class="nav-link" routerLink="works/works-list">Réalisations</a>
       </li>
       <li class="nav-item" routerLinkActive="active">
         <a class="nav-link" routerLink="contact">Contact</a>
@@ -25,7 +25,13 @@
           <a style="color:grey;margin-right: 15px;" href="https://github.com/Vaniom" target="blank">
             <i class="fab fa-github"></i>
           </a>
+          <span class="language-container">
+              <ng-container *ngFor="let language of languageList">
+                <a href="/{{language.code}}/" class="language">{{ language.code }}</a>
+              </ng-container>
+            </span>
         </div>
+        
     </ul>
   </div>
 </nav>
