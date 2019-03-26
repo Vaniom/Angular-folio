@@ -1,0 +1,28 @@
+<div class="section-white animated fadeIn" ng-view autoscroll>
+  <div class="container">
+    <h2>{{ work.title }}</h2>
+    <p class="text-justify">
+      {{ work.description }}
+    </p>
+    <p class="text-justify">
+        <i class="fas fa-thumbtack" style="font-size:1.2em; margin-right:5px;"></i> {{ work.tasks }}
+    </p>
+    <p *ngIf="work.github"> <a href="{{ work.github }}" class="github-icon" style="font-size:2em;margin-top:-2%;margin-right:10px;" target="blank" ><i class="fab fa-github-square"></i></a>Voir le code sur gitHub.</p>
+    <div class="gallery">
+      <div class="gallery-item" 
+          *ngFor="let photo of work.gallery, let i = index">
+          <div class="row">
+            <div class="col-md-7">
+                <img src="{{ photo }}" 
+                alt="..."
+                class="img-fluid img-item"
+                style="margin-bottom:70px;">
+            </div>
+              <p class="col-md-5">{{ work.galleryCaption[i] }}</p>
+          </div>
+          
+      </div>
+    </div>
+    <button type="button" class="btn btn-dark" style="margin-top:50px;" (click)="onBack()">Retour à  la liste</button>
+  </div>
+</div>
