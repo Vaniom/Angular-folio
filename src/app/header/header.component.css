@@ -1,12 +1,17 @@
+.navbar {
+    background-color: #343434 !important;
+}
+
 #brand:hover {
     cursor: pointer;
-    color: #306AD9;
+    color: #ff0000;
 }
 
 #brand {
-    color: #306AD9;
-    font-family: "Fredoka One", cursive;
+    color: #ff0000;
+    font-family: "Open Sans", sans-serif;
     font-size: 1.5em;
+    font-weight: 600;
 }
 
 .language {
